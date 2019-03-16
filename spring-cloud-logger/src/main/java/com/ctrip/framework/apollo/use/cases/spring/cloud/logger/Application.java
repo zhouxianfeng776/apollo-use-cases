@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Content :动态日志实例
  */
 @SpringBootApplication
-@EnableApolloConfig
+@EnableApolloConfig({"nuts.spring","application"})
 public class Application {
 
     public static void main(String[] args) {

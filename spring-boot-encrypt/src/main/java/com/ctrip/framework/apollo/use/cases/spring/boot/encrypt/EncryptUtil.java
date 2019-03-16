@@ -37,7 +37,7 @@ public class EncryptUtil {
         PrintStream cacheStream = new PrintStream(byteArrayOutputStream);
         //更换数据输出位置
         System.setOut(cacheStream);
-
+        System.out.println(111);
         //加密参数组装
         String[] args = {"input=" + input, "password=" + PASSWORD, "algorithm=" + ALGORITHM};
         JasyptPBEStringEncryptionCLI.main(args);
@@ -55,7 +55,8 @@ public class EncryptUtil {
     }
 
     public static void main(String[] args) {
-        System.out.println(getEncryptedParams("kl"));//print : {input=Ore69lUopDHL5R8Bw/G3bQ==, password=klklklklklklklkl}
+        System.out.println(getEncryptedParams("kl"));//print : {input=Ore69lUopDHL5R8Bw/G3bQ==,
+        // password=klklklklklklklkl}
     }
 
     /**
